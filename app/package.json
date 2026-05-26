@@ -1,0 +1,13 @@
+{
+  "name": "proyecto-docker-semana3",
+  "version": "1.0.0",
+  "description": "Proyecto semana 3 con Docker y dos contenedores comunicados",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.9.7"
+  }
+}
