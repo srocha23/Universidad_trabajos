@@ -1,10 +1,12 @@
 {
-  "name": "proyecto-docker-semana3",
+  "name": "proyecto-integracion-continua",
   "version": "1.0.0",
-  "description": "Proyecto semana 3 con Docker y dos contenedores comunicados",
+  "description": "Proyecto con Docker, MySQL y pipeline Jenkins para integracion continua",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "check": "node --check index.js",
+    "test": "npm run check"
   },
   "dependencies": {
     "express": "^4.18.2",

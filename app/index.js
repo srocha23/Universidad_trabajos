@@ -23,6 +23,13 @@ app.get("/", (req, res) => {
   res.send("Aplicación Node.js funcionando correctamente con Docker");
 });
 
+app.get("/health", (req, res) => {
+  res.json({
+    status: "ok",
+    service: "node-mysql-app"
+  });
+});
+
 app.get("/usuarios", (req, res) => {
   db.query("SELECT * FROM usuarios", (err, results) => {
     if (err) {
